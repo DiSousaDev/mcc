@@ -127,3 +127,9 @@ INSERT INTO tb_cidade (nome,estado_id) VALUES
 ('Diamante do Norte', 18),
 ('Diamante do Sul', 18),
 ('Diamante D Oeste', 18);
+
+INSERT INTO tb_endereco (logradouro, bairro, numero, complemento, cidade_id) VALUES
+('Rua das Flores', 'Centro', 1234, 'Sala 1', 95);
+
+INSERT INTO tb_diretor_espiritual (nome, observacoes, telefone, endereco_id) VALUES
+('Padre Pio Teste', 'Observações testes', '41998765432', 1);
