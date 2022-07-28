@@ -24,6 +24,9 @@ public class Endereco {
     @JoinColumn(name = "cidade_id")
     private Cidade cidade;
 
+    public Endereco() {
+    }
+
     public Endereco(Long id, String logradouro, Integer numero, String complemento, String bairro, Cidade cidade) {
         this.id = id;
         this.logradouro = logradouro;

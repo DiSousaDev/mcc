@@ -1,11 +1,29 @@
 package br.dev.diego.mcc.entities;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "tb_casa_retiro")
 public class CasaRetiro {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String nome;
+
+    @ManyToOne
+    @JoinColumn(name = "endereco_id")
     private Endereco endereco;
 
+    @OneToOne
+    @JoinColumn(name = "retiro_id")
     private Retiro retiro;
 
     public CasaRetiro() {

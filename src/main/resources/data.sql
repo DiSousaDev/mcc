@@ -133,3 +133,21 @@ INSERT INTO tb_endereco (logradouro, bairro, numero, complemento, cidade_id) VAL
 
 INSERT INTO tb_diretor_espiritual (nome, observacoes, telefone, endereco_id) VALUES
 ('Padre Pio Teste', 'Observações testes', '41998765432', 1);
+
+INSERT INTO tb_pessoa (CELULAR, DATA_NASCIMENTO, EMAIL, NOME, TELEFONE) VALUES
+('86995913125', DATE '1969-03-30', 'matheus_felipe_daluz@ceuazul.ind.br', 'Matheus Felipe da Luz', '8638222020'),
+('86989576843', DATE '1970-02-17', 'cristiane.sabrina.alves@mectron.com.br', 'Cristiane Sabrina Alves', '8638031235'),
+('85982827970', DATE '1954-07-04', 'carlos-jesus74@sicredi.com.br', 'Carlos Thomas Jesus', '8535878483'),
+('85999582815', DATE '1956-12-21', 'carla-ramos81@engemed.com', 'Carla Jéssica Ramos', '8539263041');
+INSERT INTO tb_pessoa_casal (IN_MEMORIAM, PROFISSAO, ID) VALUES
+(false, 'Motorista', 1),
+(false, 'Professora', 2),
+(false, 'Advogado', 3),
+(false, 'Contadora', 4);
+
+INSERT INTO tb_pessoa (CELULAR, DATA_NASCIMENTO, EMAIL, NOME, TELEFONE) VALUES
+('86964745133', DATE '1980-11-30', 'maria@gmail.com', 'Maria Good', '8632145777'),
+('85988745632', DATE '1959-06-01', 'bruna_pereira_santos_silva@hotmail.com', 'Bruna Pereira Santos Silva', '8539263041');
+INSERT INTO tb_pessoa_responsavel (GRAU_PARENTESCO, ID) VALUES
+('IRMÃ', 5),
+('PRIMA', 6);
