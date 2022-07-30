@@ -26,6 +26,10 @@ public class Retiro {
     private String lema;
 
     @OneToOne
+    @JoinColumn(name = "casal_coordenador_id")
+    private Casal casalCoordenador;
+
+    @OneToOne
     @JoinColumn(name = "casa_retiro_id")
     private CasaRetiro casaRetiro;
 
@@ -39,16 +43,6 @@ public class Retiro {
     private final List<Equipe> equipes = new ArrayList<>();
 
     public Retiro() {
-    }
-
-    public Retiro(Long id, String nome, LocalDate dataInicio, LocalDate dataFim, String tema, String lema, CasaRetiro casaRetiro) {
-        this.id = id;
-        this.nome = nome;
-        this.dataInicio = dataInicio;
-        this.dataFim = dataFim;
-        this.tema = tema;
-        this.lema = lema;
-        this.casaRetiro = casaRetiro;
     }
 
     public Long getId() {
@@ -97,6 +91,14 @@ public class Retiro {
 
     public void setLema(String lema) {
         this.lema = lema;
+    }
+
+    public Casal getCasalCoordenador() {
+        return casalCoordenador;
+    }
+
+    public void setCasalCoordenador(Casal casalCoordenador) {
+        this.casalCoordenador = casalCoordenador;
     }
 
     public CasaRetiro getCasaRetiro() {

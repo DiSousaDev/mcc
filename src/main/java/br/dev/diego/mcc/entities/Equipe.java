@@ -39,13 +39,6 @@ public class Equipe {
     public Equipe() {
     }
 
-    public Equipe(Long id, String nomeEquipe, Casal casalCoordenador, Retiro retiro) {
-        this.id = id;
-        this.nomeEquipe = nomeEquipe;
-        this.casalCoordenador = casalCoordenador;
-        this.retiro = retiro;
-    }
-
     public Long getId() {
         return id;
     }

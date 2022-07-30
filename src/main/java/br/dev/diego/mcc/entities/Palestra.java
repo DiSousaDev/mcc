@@ -32,13 +32,6 @@ public class Palestra {
     public Palestra() {
     }
 
-    public Palestra(Long id, LocalDate data, String tema, Retiro retiro) {
-        this.id = id;
-        this.data = data;
-        this.tema = tema;
-        this.retiro = retiro;
-    }
-
     public Long getId() {
         return id;
     }

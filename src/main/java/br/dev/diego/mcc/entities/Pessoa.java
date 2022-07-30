@@ -20,6 +20,7 @@ public abstract class Pessoa {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String nome;
+    private String nomePreferencia;
     private LocalDate dataNascimento;
     private String email;
     private String telefone;
@@ -30,16 +31,6 @@ public abstract class Pessoa {
     private Endereco endereco;
 
     public Pessoa() {
-    }
-
-    public Pessoa(Long id, String nome, LocalDate dataNascimento, String email, String telefone, String celular, Endereco endereco) {
-        this.id = id;
-        this.nome = nome;
-        this.dataNascimento = dataNascimento;
-        this.email = email;
-        this.telefone = telefone;
-        this.celular = celular;
-        this.endereco = endereco;
     }
 
     public Long getId() {
@@ -56,6 +47,14 @@ public abstract class Pessoa {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public String getNomePreferencia() {
+        return nomePreferencia;
+    }
+
+    public void setNomePreferencia(String nomePreferencia) {
+        this.nomePreferencia = nomePreferencia;
     }
 
     public LocalDate getDataNascimento() {

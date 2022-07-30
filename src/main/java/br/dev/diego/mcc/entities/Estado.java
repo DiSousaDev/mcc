@@ -25,12 +25,6 @@ public class Estado {
     public Estado() {
     }
 
-    public Estado(Long id, String nome, String sigla) {
-        this.id = id;
-        this.nome = nome;
-        this.sigla = sigla;
-    }
-
     public Long getId() {
         return id;
     }

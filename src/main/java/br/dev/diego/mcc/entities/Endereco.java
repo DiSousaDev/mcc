@@ -27,15 +27,6 @@ public class Endereco {
     public Endereco() {
     }
 
-    public Endereco(Long id, String logradouro, Integer numero, String complemento, String bairro, Cidade cidade) {
-        this.id = id;
-        this.logradouro = logradouro;
-        this.numero = numero;
-        this.complemento = complemento;
-        this.bairro = bairro;
-        this.cidade = cidade;
-    }
-
     public Long getId() {
         return id;
     }

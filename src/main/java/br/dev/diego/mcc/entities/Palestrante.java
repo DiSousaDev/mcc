@@ -23,18 +23,10 @@ public class Palestrante {
     private Endereco endereco;
 
     @ManyToOne
-    @JoinColumn(name = "palestrante_id")
+    @JoinColumn(name = "palestra_id")
     private Palestra palestra;
 
     public Palestrante() {
-    }
-
-    public Palestrante(Long id, String nome, String telefone, Endereco endereco, Palestra palestra) {
-        this.id = id;
-        this.nome = nome;
-        this.telefone = telefone;
-        this.endereco = endereco;
-        this.palestra = palestra;
     }
 
     public Long getId() {

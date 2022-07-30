@@ -26,14 +26,6 @@ public class DiretorEspiritual {
     public DiretorEspiritual() {
     }
 
-    public DiretorEspiritual(Long id, String nome, String telefone, String observacoes, Endereco endereco) {
-        this.id = id;
-        this.nome = nome;
-        this.telefone = telefone;
-        this.observacoes = observacoes;
-        this.endereco = endereco;
-    }
-
     public Long getId() {
         return id;
     }

@@ -55,19 +55,6 @@ public class Casal {
     public Casal() {
     }
 
-    public Casal(Long id, LocalDate dataCasamentoCivil, LocalDate dataCasamentoReligioso, String observacoes,
-                 PessoaCasal esposo, PessoaCasal esposa, PessoaResponsavel responsavel, Casal padrinho, Retiro retiro) {
-        this.id = id;
-        this.dataCasamentoCivil = dataCasamentoCivil;
-        this.dataCasamentoReligioso = dataCasamentoReligioso;
-        this.observacoes = observacoes;
-        this.esposo = esposo;
-        this.esposa = esposa;
-        this.responsavel = responsavel;
-        this.padrinho = padrinho;
-        this.retiro = retiro;
-    }
-
     public Long getId() {
         return id;
     }

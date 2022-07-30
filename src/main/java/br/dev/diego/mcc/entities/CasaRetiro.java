@@ -29,13 +29,6 @@ public class CasaRetiro {
     public CasaRetiro() {
     }
 
-    public CasaRetiro(Long id, String nome, Endereco endereco, Retiro retiro) {
-        this.id = id;
-        this.nome = nome;
-        this.endereco = endereco;
-        this.retiro = retiro;
-    }
-
     public Long getId() {
         return id;
     }

@@ -24,12 +24,6 @@ public class Cidade {
     public Cidade() {
     }
 
-    public Cidade(Long id, String nome, Estado estado) {
-        this.id = id;
-        this.nome = nome;
-        this.estado = estado;
-    }
-
     public Long getId() {
         return id;
     }

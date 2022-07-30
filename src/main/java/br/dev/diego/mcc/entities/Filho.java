@@ -26,13 +26,6 @@ public class Filho {
     public Filho() {
     }
 
-    public Filho(Long id, String nome, LocalDate dataNascimento, Casal casal) {
-        this.id = id;
-        this.nome = nome;
-        this.dataNascimento = dataNascimento;
-        this.casal = casal;
-    }
-
     public Long getId() {
         return id;
     }
