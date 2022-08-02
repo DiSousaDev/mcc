@@ -1,13 +1,14 @@
 import { Col, Row } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import { Link } from 'react-router-dom';
 import { Retiro } from '../../types/retiro';
 
 type Props = {
   retiro: Retiro;
 }
 
-function RetiroCard( { retiro } : Props ) {
+function RetiroCard({ retiro }: Props) {
   return (
     <Card className='mb-3'>
       <Card.Header>{retiro.nome}</Card.Header>
@@ -23,7 +24,9 @@ function RetiroCard( { retiro } : Props ) {
           </Col>
         </Row>
         <Row xs={8} md={6} lg={4} className="justify-content-end">
-          <Button variant="primary">Mais info</Button>
+          <Link to={"/retiros"}>
+            <Button variant="primary">Mais info</Button>
+          </Link>
         </Row>
       </Card.Body>
       <Card.Footer className="text-muted">{retiro.data} | {retiro.tempoPassado}</Card.Footer>

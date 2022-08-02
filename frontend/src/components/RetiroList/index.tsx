@@ -19,13 +19,11 @@ const RetiroList = () => {
     }, [])
 
     return (
-        <section id="mcc-retiros">
-            <div className="container">
-                {retiros?.map(item => {
-                    return <RetiroCard key={item.id} retiro={item} />
-                })}
-            </div>
-        </section>
+        <div>
+            {retiros?.map(item => {
+                return <RetiroCard key={item.id} retiro={item} />
+            })}
+        </div>
     )
 }
 
