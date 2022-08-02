@@ -464,12 +464,15 @@ INSERT INTO tb_casa_retiro (NOME, ENDERECO_ID, RETIRO_ID) values
 ('Casa de Retiro Mossunguê', 6, null);
 
 INSERT INTO tb_retiro (DATA_INICIO, DATA_FIM, NOME, TEMA, LEMA, CASAL_COORDENADOR_ID, CASA_RETIRO_ID) VALUES
-(DATE '2022-07-15', DATE '2022-07-17', '110º Retiro de Casais', 'Como o Pai me amou, eu também te amarei', 'Se vocês obedecerem a meus mandamentos, permanecerão no meu amor (João 15-10)', null, 1);
+(DATE '2019-12-15', DATE '2019-12-17', '110º Retiro de Casais', 'Como o Pai me amou, eu também te amarei', 'Se vocês obedecerem a meus mandamentos, permanecerão no meu amor (João 15-10)', null, 1),
+(DATE '2020-06-15', DATE '2020-06-17', '111º Retiro de Casais', 'Como o Pai me amou, eu também te amarei', 'Se vocês obedecerem a meus mandamentos, permanecerão no meu amor (João 15-10)', null, 1),
+(DATE '2022-02-01', DATE '2022-02-03', '112º Retiro de Casais', 'Como o Pai me amou, eu também te amarei', 'Se vocês obedecerem a meus mandamentos, permanecerão no meu amor (João 15-10)', null, 1),
+(DATE '2022-07-15', DATE '2022-07-17', '113º Retiro de Casais', 'Como o Pai me amou, eu também te amarei', 'Se vocês obedecerem a meus mandamentos, permanecerão no meu amor (João 15-10)', null, 1);
 
-INSERT INTO tb_casal (DATA_CASAMENTO_CIVIL, DATA_CASAMENTO_RELIGIOSO, OBSERVACOES, ESPOSA_ID, ESPOSO_ID, PADRINHO_ID, RESPONSAVEL_ID, RETIRO_ID) VALUES
+INSERT INTO tb_casal (DATA_CASAMENTO_CIVIL, DATA_CASAMENTO_RELIGIOSO, OBSERVACOES, ESPOSO_ID, ESPOSA_ID, PADRINHO_ID, RESPONSAVEL_ID, RETIRO_ID) VALUES
 (DATE '1999-11-30', DATE '1999-12-01', 'Observacoes se houverem devem ser inseridas nesse campo', 1, 2, null, 5, 1);
 
-INSERT INTO tb_casal (DATA_CASAMENTO_CIVIL, DATA_CASAMENTO_RELIGIOSO, OBSERVACOES, ESPOSA_ID, ESPOSO_ID, PADRINHO_ID, RESPONSAVEL_ID, RETIRO_ID) VALUES
+INSERT INTO tb_casal (DATA_CASAMENTO_CIVIL, DATA_CASAMENTO_RELIGIOSO, OBSERVACOES, ESPOSO_ID, ESPOSA_ID, PADRINHO_ID, RESPONSAVEL_ID, RETIRO_ID) VALUES
 (DATE '2011-01-13', DATE '2020-02-20', 'Observacoes se houverem devem ser inseridas nesse campo', 3, 4, null, 6, 1);
 
 INSERT INTO tb_equipe (NOME_EQUIPE, CASAL_COORDENADOR_ID, RETIRO_ID) VALUES
