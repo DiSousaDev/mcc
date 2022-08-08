@@ -482,6 +482,16 @@ INSERT INTO tb_equipe (NOME_EQUIPE, CASAL_COORDENADOR_ID, RETIRO_ID) VALUES
 ('Reporter', 1, 1),
 ('Sineteiro', 1, 1);
 
+INSERT INTO tb_equipe_casal (EQUIPE_ID, CASAL_ID) VALUES
+(1, 1),
+(1, 2),
+(2, 1),
+(2, 2),
+(3, 1),
+(3, 2),
+(4, 1),
+(5, 2);
+
 INSERT INTO tb_palestra (DATA, TEMA, RETIRO_ID) VALUES
 (DATE '2022-07-15', 'Acolhida', null),
 (DATE '2022-07-16', 'Sexualidade no Matrimônio', null),

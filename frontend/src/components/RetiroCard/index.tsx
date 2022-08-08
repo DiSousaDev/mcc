@@ -1,8 +1,7 @@
-import { Col, Row } from 'react-bootstrap';
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
 import { Link } from 'react-router-dom';
 import { Retiro } from '../../types/retiro';
+
+import './styles.css';
 
 type Props = {
   retiro: Retiro;
@@ -10,27 +9,32 @@ type Props = {
 
 function RetiroCard({ retiro }: Props) {
   return (
-    <Card className='mb-3'>
-      <Card.Header>{retiro.nome}</Card.Header>
-      <Card.Body>
-        <Row className='mb-2'>
-          <Col>
-            <Card.Title>Casal Coordenador</Card.Title>
-            <Card.Text>{retiro.casalCoordenador}</Card.Text>
-          </Col>
-          <Col>
-            <Card.Title>{retiro.casaRetiro}</Card.Title>
-            <Card.Text>{retiro.casaRetiroEndereco}</Card.Text>
-          </Col>
-        </Row>
-        <Row xs={8} md={6} lg={4} className="justify-content-end">
-          <Link to={"/retiros"}>
-            <Button variant="primary">Mais info</Button>
+    <div className="card base-card">
+      <div className="card-header">
+        <h1>{retiro.nome}</h1>
+        <p>{retiro.data} </p>
+      </div>
+      <div className="card-body">
+        <div className='row mb-2'>
+          <div className='col'>
+            <div className='card-title'>Casal Coordenador</div>
+            <div className='card-text'>{retiro.casalCoordenador}</div>
+          </div>
+          <div className='col'>
+            <div className='card-title'>{retiro.casaRetiro}</div>
+            <div className='card-text'>{retiro.casaRetiroEndereco}</div>
+          </div>
+        </div>
+        <div className='btn-container'>
+          <Link to={"/retiros/detalhes"}>
+            <button className='btn btn-secondary'>Mais info</button>
           </Link>
-        </Row>
-      </Card.Body>
-      <Card.Footer className="text-muted">{retiro.data} | {retiro.tempoPassado}</Card.Footer>
-    </Card>
+        </div>
+      </div>
+      <div className="show576 card-footer text-muted">
+        <p>{retiro.tempoPassado}</p>
+      </div>
+    </div>
   );
 }
 

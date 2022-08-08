@@ -1,0 +1,49 @@
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-header h1 {
+    font-size: 18px;
+}
+
+.card-footer {
+    display: flex;
+}
+
+.btn-container {
+    text-align: center;
+}
+
+.btn-container button {
+    width: 100%;
+    max-width: 480px;
+}
+
+.show576 {
+    display: none;
+}
+
+@media (min-width: 576px) {
+    .show576 {
+        display: block;
+    }
+    .card-header {
+        font-size: 20px;
+    }
+
+    .card-header h1 {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 992px) {
+    .btn-container {
+        text-align: right;
+    }
+    
+    .btn-container button {
+        max-width: 240px;
+    }
+}

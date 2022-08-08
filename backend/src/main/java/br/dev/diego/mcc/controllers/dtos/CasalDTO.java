@@ -1,18 +1,10 @@
 package br.dev.diego.mcc.controllers.dtos;
 
-import br.dev.diego.mcc.entities.CasaRetiro;
 import br.dev.diego.mcc.entities.Casal;
-import br.dev.diego.mcc.entities.Equipe;
-import br.dev.diego.mcc.entities.Filho;
-import br.dev.diego.mcc.entities.PessoaCasal;
-import br.dev.diego.mcc.entities.PessoaResponsavel;
-import br.dev.diego.mcc.entities.Retiro;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
 
-public class CasalRetiroDTO {
+public class CasalDTO {
 
     private Long id;
     private LocalDate dataCasamentoCivil;
@@ -21,10 +13,10 @@ public class CasalRetiroDTO {
     private PessoaCasalDTO esposo;
     private PessoaCasalDTO esposa;
 
-    public CasalRetiroDTO() {
+    public CasalDTO() {
     }
 
-    public CasalRetiroDTO(Casal entity) {
+    public CasalDTO(Casal entity) {
         id = entity.getId();
         dataCasamentoCivil = entity.getDataCasamentoCivil();
         dataCasamentoReligioso = entity.getDataCasamentoReligioso();

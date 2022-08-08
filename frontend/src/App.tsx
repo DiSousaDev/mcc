@@ -1,18 +1,21 @@
+import './assets/styles/custom.scss';
+import './App.css';
 import { Route, Routes } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
-
-import Home from './components/Home';
-import Header from './components/Header';
 import { BrowserRouter } from 'react-router-dom';
-import RetiroDetails from './components/RetiroDetails';
+
+import Navbar from './components/Navbar';
+import Home from './pages/Home';
+import RetiroList from './pages/RetiroList';
+import RetiroDetail from './pages/RetiroDetail';
 
 function App() {
   return (
     <BrowserRouter>
-      <Header />
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/retiros" element={<RetiroDetails />} />
+        <Route path="/retiros" element={<RetiroList />} />
+        <Route path="/retiros/detalhes" element={<RetiroDetail />} />
       </Routes>
     </BrowserRouter>
   )

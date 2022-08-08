@@ -1,0 +1,42 @@
+.search-card {
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+  
+  .search-card input {
+    background-color: #EDEDED;
+    border: 0;
+    font-size: 14px;
+
+  }
+  
+  .search-card button {
+    font-size: 14px;
+    width: 77px;
+    height: 40px;
+    font-weight: 700;
+  }
+
+  @media (min-width: 576px) {
+    .search-card button {
+      width: 174px;
+    }
+
+    .search-card input {
+      font-size: 14px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .search-card button {
+      width: 174px;
+    }
+
+    .search-card input {
+      font-size: 18px;
+    }
+  }

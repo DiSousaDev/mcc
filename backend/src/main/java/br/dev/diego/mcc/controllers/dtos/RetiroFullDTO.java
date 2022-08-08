@@ -2,12 +2,10 @@ package br.dev.diego.mcc.controllers.dtos;
 
 import br.dev.diego.mcc.entities.Retiro;
 
-import java.time.LocalDate;
-import java.time.Period;
-import java.time.format.TextStyle;
-import java.util.Locale;
+import java.util.List;
+import java.util.stream.Collectors;
 
-public class RetiroDTO {
+public class RetiroFullDTO {
 
     private Long id;
     private String nome;
@@ -17,17 +15,20 @@ public class RetiroDTO {
      private String casaRetiroEndereco;
     private String tempoPassado;
 
-    public RetiroDTO() {
+    private List<EquipeDTO> equipes;
+
+    public RetiroFullDTO() {
     }
 
-    public RetiroDTO(Retiro entity) {
+    public RetiroFullDTO(Retiro entity) {
         id = entity.getId();
         nome = entity.getNome();
         data = entity.getDataFormatada();
         casalCoordenador = entity.getCasalCoordenadorFormatado();
-        casaRetiro = new CasaRetiroDTO(entity.getCasaRetiro()).getNome();
+        casaRetiro = entity.getCasaRetiro().getNome();
         casaRetiroEndereco = entity.getEnderecoFormatado();
         tempoPassado = entity.getDaysAgo();
+        equipes = entity.getEquipes().stream().map(EquipeDTO::new).collect(Collectors.toList());
     }
 
     public Long getId() {
@@ -58,4 +59,7 @@ public class RetiroDTO {
         return tempoPassado;
     }
 
+    public List<EquipeDTO> getEquipes() {
+        return equipes;
+    }
 }

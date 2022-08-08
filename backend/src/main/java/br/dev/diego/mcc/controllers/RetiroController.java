@@ -1,6 +1,7 @@
 package br.dev.diego.mcc.controllers;
 
 import br.dev.diego.mcc.controllers.dtos.RetiroDTO;
+import br.dev.diego.mcc.controllers.dtos.RetiroFullDTO;
 import br.dev.diego.mcc.services.RetiroService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -24,7 +25,7 @@ public class RetiroController {
     }
 
     @GetMapping(value = "/{id}")
-    public ResponseEntity<RetiroDTO> findById(@PathVariable Long id) {
+    public ResponseEntity<RetiroFullDTO> findById(@PathVariable Long id) {
         return ResponseEntity.ok(service.findById(id));
     }
 
