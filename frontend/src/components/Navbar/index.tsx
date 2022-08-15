@@ -1,6 +1,7 @@
 import 'bootstrap/js/src/collapse.js';
 import { Link, NavLink } from 'react-router-dom';
-import logo from '../../assets/img/logo.png';
+import { ReactComponent as MenuItem } from '../../assets/images/menu-item.svg';
+import logo from '../../assets/images/logo.png';
 
 import './styles.css';
 
@@ -20,7 +21,9 @@ const Navbar = () => {
                   aria-expanded='false'
                   aria-label='Toggle navigation'
               >
-                  <span className='navbar-toggler-icon'></span>
+                  <span className='navbar-toggler-icon'>
+                    <MenuItem />
+                  </span>
               </button>
               <div className='collapse navbar-collapse' id='mcc-navbar'>
                   <ul className='navbar-nav offset-md-2 main-menu'>

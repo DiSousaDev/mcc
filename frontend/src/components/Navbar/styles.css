@@ -37,10 +37,6 @@
     border: 0px;
 }
 
-.navbar-toggler-icon {
-    background-image: url('../../assets/img/menu-item.svg');
-}
-
 @media (min-width: 1280px) {
     .main-nav {
         padding-left: 140px;

@@ -1,7 +1,10 @@
-import axios from "axios";
+import axios from 'axios';
+
+export const BASE_URL =
+  process.env.REACT_APP_BACKEND_URL ?? 'http://localhost:8080';
 
 const api = axios.create({
-  baseURL: import.meta.env.VITE_BACKEND_URL ?? "http://localhost:8080"
+  baseURL: BASE_URL
 });
 
 export default api;

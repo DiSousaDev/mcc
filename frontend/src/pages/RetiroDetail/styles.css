@@ -1,0 +1,55 @@
+.main-container {
+    padding: 10px;
+}
+
+.retiro-title-container {
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.title-container {
+    text-align: center;
+}
+
+.title-container h1 {
+    font-size: 22px;;
+}
+
+.title-container p {
+    font-size: 0.8em;;
+}
+
+.title-container hr {
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+.details-item-row h1 {
+    margin-right: 5px;
+    font-size: 16px;
+}
+
+.details-item-row p {
+    font-size: 14px;
+}
+
+.img-remover {
+    width: 20%;
+}
+
+.img-remover-container {
+    border: 5px solid blue;
+}
+
+.button-table {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button-table button {
+    color: aliceblue;
+}

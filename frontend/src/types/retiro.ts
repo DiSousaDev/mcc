@@ -1,3 +1,5 @@
+import { Equipe } from "./equipe";
+
 export type Retiro = {
     id: number;
     nome: string;
@@ -6,4 +8,5 @@ export type Retiro = {
     casaRetiro: string;
     casaRetiroEndereco: string;
     tempoPassado: string;
+    equipes: Equipe[];
 }

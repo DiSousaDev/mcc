@@ -14,8 +14,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/retiros" element={<RetiroList />} />
-        <Route path="/retiros/detalhes" element={<RetiroDetail />} />
+        <Route path="retiros" element={<RetiroList />} />
+        <Route path="retiros/:retiroId" element={<RetiroDetail />} />
       </Routes>
     </BrowserRouter>
   )

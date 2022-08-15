@@ -26,7 +26,7 @@ function RetiroCard({ retiro }: Props) {
           </div>
         </div>
         <div className='btn-container'>
-          <Link to={"/retiros/detalhes"}>
+          <Link to={`/retiros/${retiro.id}`}>
             <button className='btn btn-secondary'>Mais info</button>
           </Link>
         </div>

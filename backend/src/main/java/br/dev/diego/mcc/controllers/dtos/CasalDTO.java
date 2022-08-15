@@ -7,6 +7,7 @@ import java.time.LocalDate;
 public class CasalDTO {
 
     private Long id;
+    private String nomeCasal;
     private LocalDate dataCasamentoCivil;
     private LocalDate dataCasamentoReligioso;
     private String observacoes;
@@ -47,5 +48,9 @@ public class CasalDTO {
 
     public PessoaCasalDTO getEsposa() {
         return esposa;
+    }
+
+    public String getNomeCasal() {
+        return esposo.getNomePreferencia() + " e " + esposa.getNomePreferencia();
     }
 }
