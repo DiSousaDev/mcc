@@ -25,17 +25,8 @@
     color: #2A2B2A;
 }
 
-.main-menu a :hover {
-    color: #2A2B2A
-}
 
-.main-menu a.active {
-    color: #2A2B2A
-}
 
-.navbar-btn-color {
-    border: 0px;
-}
 
 @media (min-width: 1280px) {
     .main-nav {

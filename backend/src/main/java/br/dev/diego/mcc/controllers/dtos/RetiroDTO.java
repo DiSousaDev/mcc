@@ -2,11 +2,6 @@ package br.dev.diego.mcc.controllers.dtos;
 
 import br.dev.diego.mcc.entities.Retiro;
 
-import java.time.LocalDate;
-import java.time.Period;
-import java.time.format.TextStyle;
-import java.util.Locale;
-
 public class RetiroDTO {
 
     private Long id;

@@ -17,6 +17,8 @@ public class RetiroFullDTO {
 
     private List<EquipeDTO> equipes;
 
+    private List<CasalDTO> casaisNeo;
+
     public RetiroFullDTO() {
     }
 
@@ -29,6 +31,7 @@ public class RetiroFullDTO {
         casaRetiroEndereco = entity.getEnderecoFormatado();
         tempoPassado = entity.getDaysAgo();
         equipes = entity.getEquipes().stream().map(EquipeDTO::new).collect(Collectors.toList());
+        casaisNeo = entity.getCasaisNeo().stream().map(CasalDTO::new).collect(Collectors.toList());
     }
 
     public Long getId() {
@@ -61,5 +64,9 @@ public class RetiroFullDTO {
 
     public List<EquipeDTO> getEquipes() {
         return equipes;
+    }
+
+    public List<CasalDTO> getCasaisNeo() {
+        return casaisNeo;
     }
 }

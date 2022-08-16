@@ -19,6 +19,16 @@
     font-size: 0.8em;;
 }
 
+.card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.casal-coordenador-row p {
+    margin-left: 5px;
+}
+
 .title-container hr {
     margin: 0 auto;
     width: 80%;
@@ -37,12 +47,16 @@
     font-size: 14px;
 }
 
-.img-remover {
-    width: 20%;
+.img-remover-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.img-remover-container {
-    border: 5px solid blue;
+.img-remover-container svg {
+    color: #dc3545;
+    width: 25px;
+    height: 25px;
 }
 
 .button-table {
@@ -50,6 +64,25 @@
     justify-content: flex-end;
 }
 
-.button-table button {
-    color: aliceblue;
+.table-casais thead tr th {
+    text-align: center;
+}
+
+.table-casais tbody tr td {
+    text-align: center;
+}
+
+.th-casal {
+    text-align: left;
+    width: 280px;
+}
+
+.casais-neo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.casais-neo h1 {
+    color: antiquewhite;
 }

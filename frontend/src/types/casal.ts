@@ -2,7 +2,7 @@ import { Pessoa } from "./pessoa";
 
 export type Casal = {
   id: number;
-  nomeDoCasal: string;
+  nomeCasal: string;
   dataCasamentoCivil: string,
   dataCasamentoReligioso: string
   observacoes: string;

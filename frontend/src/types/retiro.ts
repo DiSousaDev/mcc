@@ -1,3 +1,4 @@
+import { Casal } from "./casal";
 import { Equipe } from "./equipe";
 
 export type Retiro = {
@@ -9,4 +10,5 @@ export type Retiro = {
     casaRetiroEndereco: string;
     tempoPassado: string;
     equipes: Equipe[];
+    casaisNeo: Casal[];
 }
