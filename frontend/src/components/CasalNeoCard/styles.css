@@ -1,0 +1,9 @@
+.casais-neo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.casais-neo h1 {
+    color: antiquewhite;
+}

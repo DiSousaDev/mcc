@@ -1,0 +1,11 @@
+.img-remover-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-remover-container svg {
+    color: #dc3545;
+    width: 25px;
+    height: 25px;
+}

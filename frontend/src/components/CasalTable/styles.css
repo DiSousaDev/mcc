@@ -1,0 +1,12 @@
+.table-casais thead tr th {
+    text-align: center;
+}
+
+.table-casais tbody tr td {
+    text-align: center;
+}
+
+.th-casal {
+    text-align: left;
+    width: 280px;
+}
